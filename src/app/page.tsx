@@ -1,6 +1,22 @@
 import Link from "next/link";
 import Image from "next/image";
 
+type Item = { icon: string; title: string; desc: string; };
+
+// const ACHIEVEMENTS: Item[] = [
+//   { icon: "/achievements/gamepad.svg", title: "Game Programming", desc: "Gamers, game programming, and game technology." },
+//   { icon: "/achievements/tensorflow.png", title: "Application Development", desc: "Building applications with clean code and solid architecture." },
+//   { icon: "/achievements/analytics.svg", title: "Web Development", desc: "Collaborative web development with modern frameworks." },
+//   { icon: "/achievements/group.svg", title: "Member of UREKA", desc: "Active member contributing to the community." },
+// ];
+
+// const STATS = [
+//   { value: "12+", label: "Projects" },
+//   { value: "300+", label: "Hours Coding" },
+//   { value: "5",   label: "Certificates" },
+//   { value: "2",   label: "Communities" },
+// ]; 1
+
 export default function home() {
   return (
     <div className="site">
@@ -43,6 +59,52 @@ export default function home() {
             View Portfolio
           </Link>
         </section>
+      </div>
+      
+      {/* <section className="achv">
+        <h2 className="achv-title">
+          <span>MY</span> <span>ACHIEVEMENT</span>
+        </h2>
+
+        
+        <p className="achv-quote">
+          “Keep learning, keep shipping.” <span>— Johan</span>
+        </p>
+
+      
+        <div className="achv-divider" aria-hidden>
+          <svg viewBox="0 0 1200 64" preserveAspectRatio="none">
+            <path d="M0,32 C200,64 400,0 600,32 800,64 1000,0 1200,32 L1200,64 L0,64 Z"></path>
+          </svg>
+        </div>
+
+
+        <div className="achv-grid">
+          {ACHIEVEMENTS.map((a, i) => (
+            <article key={i} className="achv-card">
+              <div className="achv-icon">
+                <Image src={a.icon} alt={a.title} fill sizes="96px" style={{ objectFit: "contain" }} />
+              </div>
+              <h3 className="achv-head">{a.title}</h3>
+              <p className="achv-desc">{a.desc}</p>
+            </article>
+          ))}
+        </div>
+
+        <ul className="achv-stats">
+          {STATS.map((s, i) => (
+            <li key={i} className="achv-stat">
+              <strong className="achv-stat-value">{s.value}</strong>
+              <span className="achv-stat-label">{s.label}</span>
+            </li>
+          ))}
+        </ul>
+      </section> 2*/} 
+
+      <div className="custom-shape-divider-top-1758384587">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" className="shape-fill"></path>
+        </svg>
       </div>
     </div>
   );
