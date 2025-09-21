@@ -1,9 +1,9 @@
 :root {
---bg: rgb(252, 248, 243);      /* krem sangat muda */
+  --bg: rgb(252, 248, 243);      /* krem sangat muda */
   --text: #111213;    /* hitam */
   --muted: #a9a9a9;   /* abu teks */
-  --accent: rgb(185, 132, 59);  /* cokelat emas */
-  --card: #efebe6;    /* krem lebih gelap */
+  --accent: #b9843b;  /* cokelat emas */
+  --card: #f0d1ad;    /* krem lebih gelap */
   --radius-2xl: 28px; /* border radius besar */
 }
 
@@ -68,6 +68,7 @@ body {
   position: absolute;
   bottom: 0px;
   border-radius: 300px;
+  box-shadow: 0px 8px 20px #c4c4c4;
 }
 
 .profile-desc {
@@ -125,29 +126,70 @@ body {
   color: #fff;
   font-weight: 700;
   box-shadow: 0 8px 20px rgba(185,132,59,0.25);
-  transition: transform .12s ease, box-shadow .12s ease, opacity .12s ease;
+  transition: transform .5s ease, box-shadow .5s ease, opacity .2s ease;
 }
 .btnPrimary:hover {
   transform: translateY(-1px);
   box-shadow: 0 10px 24px rgba(185,132,59,0.30);
 }
 
-.custom-shape-divider-top-1758384587 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+.achievement-card-container {
+  display: flex;
+  justify-content: center;
 }
 
-.custom-shape-divider-top-1758384587 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 299px;
+.achievement-card {
+  background-color: var(--card);
+  width: 19%;
+  height: 400px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px var(--card);
+
+  display: flex;              
+  flex-direction: column;      
+  align-items: center;         
+  justify-content: center;     
+  
+  padding: 2px 16px;                               
+  margin: 12px;                
 }
 
-.custom-shape-divider-top-1758384587 .shape-fill {
-    fill: #FFFFFF;
+.achievement-img {
+  object-fit: contain;
+  width: 100px;
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.achievement-title {
+  font-size: 20px;
+  margin: 0 0 5px 0;
+
+}
+
+.achievement-desc {
+  font-size: 15px;
+  text-align: center;
+  color: #636363;
+  margin: 0px  0px 60px 0px;
+}
+
+.achievement-button {
+  background: #dd9126;
+}
+
+.achievement-container {
+  display: flex;              
+  flex-direction: column;      
+  align-items: center;         
+  justify-content: center;
+}
+
+.achievement-section-title {
+  font-size: 70px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
 }
