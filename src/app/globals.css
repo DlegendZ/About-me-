@@ -15,6 +15,26 @@ body {
   line-height: 1.6;
 }
 
+.custom-shape-divider-top-1758641675 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1758641675 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 143px;
+}
+
+.custom-shape-divider-top-1758641675 .shape-fill {
+    fill: #dbac86;
+}
+
 .header {
   /* background-color: black; */
   width: 100%;
@@ -136,6 +156,7 @@ body {
 .achievement-card-container {
   display: flex;
   justify-content: center;
+  z-index: 2;
 }
 
 .achievement-card {
@@ -176,7 +197,7 @@ body {
 }
 
 .achievement-button {
-  background: #dd9126;
+  background: #c89b5c;
 }
 
 .achievement-container {
@@ -184,6 +205,8 @@ body {
   flex-direction: column;      
   align-items: center;         
   justify-content: center;
+  position: relative;
+  /* background-color: black; */
 }
 
 .achievement-section-title {
@@ -192,4 +215,55 @@ body {
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 2px;
+  z-index: 2;
+}
+
+.achievement-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;        /* biar rapat dan konsisten */
+  gap: 10px;             /* <-- Jarak MY ↔ ACHIEVEMENT */
+  margin-bottom: 15px;   /* <-- Jarak ACHIEVEMENT ↔ Cards */
+}
+
+.custom-shape-divider-bottom-1758637816 {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 1;
+}
+
+.custom-shape-divider-bottom-1758637816 svg {
+    position: relative;
+    width: calc(134% + 1.3px);
+    height: 240px;
+    
+}
+
+.custom-shape-divider-bottom-1758637816 .shape-fill {
+    fill: #dbac86;
+}
+
+.custom-shape-divider-top-1758638953 {
+    position: absolute;
+    top: 190px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1758638953 svg {
+    position: relative;
+    width: calc(100% + 1.3px);
+    height: 143px;
+}
+
+.custom-shape-divider-top-1758638953 .shape-fill {
+    fill: #dbac86;
 }
